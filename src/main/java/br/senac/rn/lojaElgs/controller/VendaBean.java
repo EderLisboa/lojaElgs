@@ -1,10 +1,10 @@
-package br.senac.rn.lojarapida.controller;
+package br.senac.rn.lojaElgs.controller;
 
-import br.senac.rn.lojarapida.dao.ClienteDAO;
-import br.senac.rn.lojarapida.dao.ProdutoDAO;
-import br.senac.rn.lojarapida.model.Cliente;
-import br.senac.rn.lojarapida.model.Produto;
-import br.senac.rn.lojarapida.model.Venda;
+import br.senac.rn.lojaElgs.dao.ClienteDAO;
+import br.senac.rn.lojaElgs.dao.ProdutoDAO;
+import br.senac.rn.lojaElgs.model.Cliente;
+import br.senac.rn.lojaElgs.model.Produto;
+import br.senac.rn.lojaElgs.model.Venda;
 import java.util.List;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;

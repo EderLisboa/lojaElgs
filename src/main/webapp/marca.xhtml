@@ -5,39 +5,37 @@
     xmlns:h="http://xmlns.jcp.org/jsf/html"
     xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
-        <title>Categoria</title>
+        <title>Marca</title>
     </h:head>
     <h:body>
-        <h2>Categoria</h2>
+        <h2>Marca</h2>
         <fieldset>
-            <legend>Dados da Categoria</legend>
+            <legend>Marca</legend>
             <h:form>
                 <h:panelGrid>
                     <h:outputLabel value="Nome" for="nome" />
-                    <h:inputText id="nome" value="#{categoriaBean.categoria.nome}" />
-                    <h:outputLabel value="Descrição" for="descricao" />
-                    <h:inputTextarea id="descricao" value="#{categoriaBean.categoria.descricao}" />
-                    <h:commandButton value="Salvar" action="#{categoriaBean.salvar}" />
+                    <h:inputText id="nome" value="#{marcaBean.marca.nome}" />
+                    <h:commandButton value="Salvar" action="#{marcaBean.salvar}" />
                 </h:panelGrid>
             </h:form>
         </fieldset>
         <fieldset>
-            <legend>Lista de Categorias</legend>
+            <legend>Lista de Marcas</legend>
             <h:form>
-                <h:dataTable value="#{categoriaBean.categorias}" var="categoria">
+                <h:dataTable value="#{marcaBean.marcas}" var="marca">
                     <h:column>
                         <f:facet name="header">Id</f:facet>
-                        <h:outputText value="#{categoria.id}" />
+                        <h:outputText value="#{marca.id}" />
                     </h:column>
                     <h:column>
                         <f:facet name="header">Nome</f:facet>
-                        <h:outputText value="#{categoria.nome}" />
+                        <h:outputText value="#{marca.nome}" />
                     </h:column>
                     <h:column>
-                        <h:commandLink value="editar" action="#{categoriaBean.editar(categoria)}" />
+                        <h:commandLink value="editar" action="#{marcaBean.editar(marca)}" />
                     </h:column>
                     <h:column>
-                        <h:commandLink value="remover" action="#{categoriaBean.remover(categoria)}" />
+                        <h:commandLink value="remover" action="#{marcaBean.remover(marca)}" />
                     </h:column>
                 </h:dataTable>
             </h:form>

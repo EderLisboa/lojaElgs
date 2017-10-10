@@ -1,7 +1,7 @@
-package br.senac.rn.lojarapida.converter;
+package br.senac.rn.lojaElgs.converter;
 
-import br.senac.rn.lojarapida.dao.ProdutoDAO;
-import br.senac.rn.lojarapida.model.Produto;
+import br.senac.rn.lojaElgs.dao.ProdutoDAO;
+import br.senac.rn.lojaElgs.model.Produto;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;

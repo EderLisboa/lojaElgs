@@ -1,4 +1,4 @@
-package br.senac.rn.lojarapida.model;
+package br.senac.rn.lojaElgs.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package br.senac.rn.lojarapida.model;
+package br.senac.rn.lojaElgs.model;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
@@ -7,29 +7,25 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Sexo implements Serializable {
+public class Marca implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) 
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nome;
-    private char sigla;
 
-    public Sexo() {
+    public Marca() {
     }
 
-    public Sexo(int id, String nome, char sigla) {
+    public Marca(int id, String nome) {
         this.id = id;
         this.nome = nome;
-        this.sigla = sigla;
+
     }
 
-    public char getSigla() {
-        return sigla;
-    }
+    public Marca(String nome) {
+        this.nome = nome;
 
-    public void setSigla(char sigla) {
-        this.sigla = sigla;
     }
 
     public int getId() {
@@ -50,8 +46,8 @@ public class Sexo implements Serializable {
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 73 * hash + this.id;
+        int hash = 3;
+        hash = 97 * hash + this.id;
         return hash;
     }
 
@@ -66,7 +62,7 @@ public class Sexo implements Serializable {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Sexo other = (Sexo) obj;
+        final Marca other = (Marca) obj;
         if (this.id != other.id) {
             return false;
         }
@@ -75,7 +71,7 @@ public class Sexo implements Serializable {
 
     @Override
     public String toString() {
-        return "Sexo{" + "id=" + id + ", nome=" + nome + ", sigla=" + sigla + '}';
+        return "Marca{" + "id=" + id + ", nome=" + nome + '}';
     }
-    
+
 }

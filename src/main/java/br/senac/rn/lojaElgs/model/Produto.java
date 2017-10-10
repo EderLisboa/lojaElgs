@@ -1,4 +1,4 @@
-package br.senac.rn.lojarapida.model;
+package br.senac.rn.lojaElgs.model;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
@@ -17,31 +17,31 @@ public class Produto implements Serializable {
     private String descricao;
     private float preco;
     @ManyToOne
-    private Categoria categoria;
+    private Marca marca;
 
     public Produto() {}
 
-    public Produto(String nome, String descricao, float preco, Categoria categoria) {
+    public Produto(String nome, String descricao, float preco, Marca marca) {
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
-        this.categoria = categoria;
+        this.marca = marca;
     }
 
-    public Produto(int id, String nome, String descricao, float preco, Categoria categoria) {
+    public Produto(int id, String nome, String descricao, float preco, Marca marca) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
-        this.categoria = categoria;
+        this.marca = marca;
     }
 
-    public Categoria getCategoria() {
-        return categoria;
+    public Marca getMarca() {
+        return marca;
     }
 
-    public void setCategoria(Categoria categoria) {
-        this.categoria = categoria;
+    public void setCategoria(Marca marca) {
+        this.marca = marca;
     }
 
     public int getId() {
@@ -103,7 +103,7 @@ public class Produto implements Serializable {
 
     @Override
     public String toString() {
-        return "Produto{" + "id=" + id + ", nome=" + nome + ", descricao=" + descricao + ", preco=" + preco + ", categoria=" + categoria + '}';
+        return "Produto{" + "id=" + id + ", nome=" + nome + ", descricao=" + descricao + ", preco=" + preco + ", marca=" + marca + '}';
     }
     
 }

@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.senac.rn.lojarapida.converter;
+package br.senac.rn.lojaElgs.converter;
 
-import br.senac.rn.lojarapida.dao.CategoriaDAO;
-import br.senac.rn.lojarapida.dao.ClienteDAO;
-import br.senac.rn.lojarapida.model.Categoria;
-import br.senac.rn.lojarapida.model.Cliente;
+import br.senac.rn.lojaElgs.dao.MarcaDAO;
+import br.senac.rn.lojaElgs.dao.ClienteDAO;
+import br.senac.rn.lojaElgs.model.Marca;
+import br.senac.rn.lojaElgs.model.Cliente;
 import java.lang.annotation.Annotation;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;

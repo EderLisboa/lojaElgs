@@ -1,4 +1,4 @@
-package br.senac.rn.lojarapida.util;
+package br.senac.rn.lojaElgs.util;
 
 import java.util.List;
 import javax.persistence.EntityManager;

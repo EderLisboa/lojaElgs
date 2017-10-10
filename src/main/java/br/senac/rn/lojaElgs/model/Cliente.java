@@ -1,4 +1,4 @@
-package br.senac.rn.lojarapida.model;
+package br.senac.rn.lojaElgs.model;
 
 import java.io.Serializable;
 import javax.persistence.Column;
@@ -17,21 +17,24 @@ public class Cliente implements Serializable {
     private String nome;
     @Column(unique = true)
     private String cpf;
-    @ManyToOne //classe interna to classe de fora
+    @ManyToOne
     private Sexo sexo;
+    private String endereco;
 
     public Cliente() {}
 
-    public Cliente(String nome, String cpf, Sexo sexo) {
+    public Cliente(String nome, String cpf, Sexo sexo, String endereco) {
         this.nome = nome;
         this.cpf = cpf;
         this.sexo = sexo;
+        this.endereco = endereco;
     }
 
-    public Cliente(int id, String cpf, Sexo sexo) {
+    public Cliente(int id, String cpf, Sexo sexo, String endereco) {
         this.id = id;
         this.cpf = cpf;
         this.sexo = sexo;
+        this.endereco = endereco;
     }
 
     public Sexo getSexo() {
@@ -65,6 +68,14 @@ public class Cliente implements Serializable {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+    
+     public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
 
     @Override
     public int hashCode() {
@@ -93,7 +104,9 @@ public class Cliente implements Serializable {
 
     @Override
     public String toString() {
-        return "Cliente{" + "id=" + id + ", nome=" + nome + ", cpf=" + cpf + ", sexo=" + sexo + '}';
+        return "Cliente{" + "id=" + id + ", nome=" + nome + ", cpf=" + cpf + ", sexo=" + sexo + ", endereco=" + endereco + '}';
     }
+
+    
     
 }

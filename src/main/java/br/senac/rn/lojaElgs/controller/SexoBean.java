@@ -1,7 +1,7 @@
-package br.senac.rn.lojarapida.controller;
+package br.senac.rn.lojaElgs.controller;
 
-import br.senac.rn.lojarapida.dao.SexoDAO;
-import br.senac.rn.lojarapida.model.Sexo;
+import br.senac.rn.lojaElgs.dao.SexoDAO;
+import br.senac.rn.lojaElgs.model.Sexo;
 import java.util.List;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;

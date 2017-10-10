@@ -1,7 +1,7 @@
-package br.senac.rn.lojarapida.dao;
+package br.senac.rn.lojaElgs.dao;
 
-import br.senac.rn.lojarapida.model.Sexo;
-import br.senac.rn.lojarapida.util.GenericDAO;
+import br.senac.rn.lojaElgs.model.Sexo;
+import br.senac.rn.lojaElgs.util.GenericDAO;
 
 public class SexoDAO extends GenericDAO<Sexo> {
 
